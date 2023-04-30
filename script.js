@@ -8,6 +8,6 @@ form.addEventListener('submit', (event) => {
 	const name = document.querySelector('#name').value;
 	greeting.textContent = `Welcome, ${name}!`;
 	form.reset();
-window.location.href = 'welcome/index.html';
+	window.location.replace(`/${about}`);
 
 });
