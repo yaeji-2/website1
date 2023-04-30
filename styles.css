@@ -4,7 +4,7 @@
 }
 
 .welcome {
-    background-image: url('/images/cloversblur.jpg');
+    background-image: url('images/cloversblur.jpg');
     background-size: cover;
     background-position: center;
     height: 250px;
