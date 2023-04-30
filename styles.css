@@ -3,15 +3,12 @@
     src:url(Pokemon\ Classic.ttf);   
 }
 
-p {
-    font-family: pokemon;
-}
-
-.background-image {
+.welcome {
     background-image: url('your-image-url-here');
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 250px;
+    width: 250px;
     color: white;
     text-align: center;
     display: flex;
