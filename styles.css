@@ -4,7 +4,7 @@
 }
 
 .welcome {
-    background-image: url('clovers.jpg')
+    background-image: url('clovers.jpg');
     background-position: center;
     height: 250px;
     width: 250px;
