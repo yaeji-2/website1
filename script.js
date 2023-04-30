@@ -1,9 +1,9 @@
 const form = document.querySelector('form');
-const greeting = document.querySelector('#greeting');
 
 form.addEventListener('submit', (event) => {
 	event.preventDefault();
 	const name = document.querySelector('#name').value;
-	greeting.textContent = `Welcome, ${name}!`;
+	localStorage.setItem('recentUser', name);
 	form.reset();
+	window.location.href = 'main.html';
 });
