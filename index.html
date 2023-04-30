@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Yaeji's World</title>
+    <title>yaeji's world</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .profile-card {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+
+      .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .profile-name {
+        margin-top: 20px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .profile-job-title {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        color: #999;
+      }
+
+      .profile-description {
+        margin-top: 20px;
+        font-size: 1.1rem;
+        color: #666;
+        line-height: 1.5;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Welcome</h1>
-    </header>
-    <main>
-      <article>
-        <header>
-          <p>Coming soon...</p>
-        </header>
-      </article>
+    <div class="container">
+      <div class="profile-card">
+        <div class="profile-image">
+          <img src="https://via.placeholder.com/200x200.png?text=Profile+Image" alt="Profile Image">
+        </div>
+        <div class="profile-name">yaeji</div>
+        <div class="profile-job-title"></div>
+        <div class="profile-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis tortor sapien, vel rutrum est viverra eget. Donec malesuada libero at metus luctus, a ultrices nibh pharetra.
+        </div>
+      </div>
+    </div>
   </body>
 </html>
