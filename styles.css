@@ -30,7 +30,6 @@
 }
 
   .scroll {
-    position: absolute;
     display: block;
     margin: auto auto;
     white-space: nowrap;
