@@ -3,20 +3,127 @@
     <head>
         <meta charset="UTF-8">
         <title>yaeji's world</title>
-	<link rel="stylesheet" href="styles.css">
+	    <link rel="stylesheet" href="styles.css">
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Dec 3, 2023 00:00:00").getTime();
+      
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+      
+              // Get the current date and time
+              var now = new Date().getTime();
+      
+              // Find the distance between now and the countdown date
+              var distance = countDownDate - now;
+      
+              // Calculate days, hours, minutes, and seconds remaining
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+              // Display the countdown in the HTML element with id="countdown"
+              document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+      
+              // If the countdown is over, display a message
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+          </script>
     </head>
     <body>
         
         <div class="bigdiv">
             <div class="welcome">
                 <div class="scroll">
-                    <span>coming soon!!!!!</span>
+                    <span><img src="!!.gif"> welcome to yaeji's world <img src="!!.gif"></span>
                 </div>
             </div>
+            <a href="https://open.spotify.com/playlist/2mo5u6VbhMAF8C61L6FLKa?si=bfd8d549ea83418e"><div class="minibanner"><img src="smile.gif">&nbspTHE PLAYLIST</div></a>
+            <div class="minibanner1"><img src="question_marks.gif"> &nbspANONYMOUS TIPS</div>
         </div>
 
         <div class="about">
 
-          </div>          
+            <div class="button1">
+                <h2 class="banner"><img src="star3-1.gif"> you should listen to this song:</h2>
+                <iframe class="iframe" style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/track/1KCXYoPIpvafzaAGtiRjci?utm_source=generator&theme=0" 
+                    width="96%" 
+                    height="132" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="button2">
+                <h1 class="camera" style="margin-top: 21px"><img src="camera.png">  MY CAMERA GEAR</h1>
+                <ul>
+                    <li>canon eos rp</li>
+                    <li>rf 70-200 f/4 L</li>
+                    <li>rf 50 f/1.8</li>
+                    <br>
+                    <li>sony a7 iv*</li>
+                    <li>16-35 f/2.8*</li>
+                </ul>
+            </div>
+            <div class="button3">
+                <h1 class="camera" style="margin-top:21px"><img src="gear.gif">  PC SPECS</h1>
+                <ul>
+                    <li>r9 5900x</li>
+                    <li>3080 ftw3 ultra</li>
+                    <li>32gb 2x16 3600 &nbspcl14</li>
+                    <li>kraken x63</li>
+                    <li>strix b550f</li>
+                </ul>
+            </div>
+            <div class="button4">
+                <h1 class="camera" style="margin-top:21px"><img src="rv.jpg">  THE COLLECTION</h1>
+                <ul>
+                    <li>Ice Cream Cake (automatic ver.)</li>
+                    <li>The Red</li>
+                    <li>The Velvet</li>
+                    <li>Russian Roulette (g)</li>
+                    <li>Rookie (Irene ver.)</li>
+                    <li>Red Summer (g)</li>
+                    <li>Perfect Velvet (g)</li>
+                    <li>The Perfect Red Velvet (g)</li>
+                    <li>#Cookie Jar (jewel)</li>
+                    <li>Summer Magic (g)</li>
+                    <li>RBB</li>
+                    <li>ReVe Festival Day 1 (g | Joy, Wendy ver.)</li>
+                    <li>ReVe Festival Day 2 (day 2 ver.)</li>
+                    <li>ReVe Festival Finale (all ver)</li>
+                    <li>Queendom (all ver.)</li>
+                    <li>Feel My Rhythm (all ver.)</li>
+                    <li>WILDSIDE (jewel)</li>
+                    <li>ReVe Festival: Birthday (Recipe photobook | Cakes: Irene, Seulgi, Wendy, Joy | Digipacks: Wendy, Seulgi, Joy)</li>
+                    <br>
+                </ul>
+                <h1 class="camera">OTHERS:</h1>
+                <ul>
+                    <li>Like Water (photobook, case)</li>
+                    <li>Hello (photobook, case)</li>
+                    <li>28 Reasons (photobook, special)</li>
+                    <li>Monster (base note)</li>
+                </ul>
+            </div>
+            <div class="button5">
+                <h1 class="camera" style="margin-top:21px; font-size: 20px"><img src="hearts.gif">&nbsp하나 <h2 style="font-size: 7px; margin-left: 20px; margin-top: 0px;">(2021.12.3)</h2></h1>
+                <p style="margin-left: 20px">기념일: 
+                    <br>2023년 12월 3일.</p><p class="countdown" id="countdown"></p>
+            </div>
+            <div class="button6">what goes here?</div>
+            <div class="button7"></div>
+            <div class="button8"></div>
+            <div class="button9"></div>
+        </div>     
+
     </body>
 </html>
