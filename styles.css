@@ -3,6 +3,10 @@
     src:url(Pokemon\ Classic.ttf);   
 }
 
+body {
+    display: flex;
+}
+
 .welcome {
     background-image: url('images/cloversblur.jpg');
     background-size: cover;
@@ -31,6 +35,7 @@
 
   .scroll {
     display: block;
+    display: table-cell;
     margin: auto auto;
     white-space: nowrap;
     overflow: hidden;
@@ -46,8 +51,9 @@
     min-width: 100%;
     height: 100%;
     line-height: 140px;
-    font-size: 25px;
+    font-size: 16px;
     animation: marquee 10s linear infinite;
+    align-self: flex-end;
 }
 
 .bigdiv {
