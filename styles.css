@@ -43,3 +43,8 @@
     font-size: 85px;
     animation: marquee 10s linear infinite;
 }
+
+.bigdiv {
+    height: 100vh;
+    width: 280px;
+}
