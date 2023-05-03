@@ -164,12 +164,12 @@ body {
     margin: 10px;
     border-color: green;
     font-family: pokemon;
-    overflow-x: hide;
+    overflow: hidden;
 }
 
-.button5:hover {
-    overflow: scroll;
-}
+div:hover {
+    overflow-y: scroll;
+  }
 
 .button6 {
     width: 45%;
@@ -291,5 +291,4 @@ li {
     line-height: 140px;
     font-size: 25px;
 }
-
 
