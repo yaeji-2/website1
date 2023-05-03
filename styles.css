@@ -167,9 +167,9 @@ body {
     overflow: hidden;
 }
 
-div:hover {
+.button5:hover {
     overflow-y: scroll;
-  }
+}
 
 .button6 {
     width: 45%;
