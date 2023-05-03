@@ -64,8 +64,6 @@ body {
 .about {
   margin-top: 152px;
   margin-left: 30px;
-  width: 850px;
-  height: 650px;
   outline: solid;
   outline-width: 2px;
   outline-color: #e9afba;
@@ -73,11 +71,12 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 500px; /* set the width of the parent div */
+  width: 60%; /* set the width of the parent div */
   height: 600px; /* set the height of the parent div */
   overflow: hidden;
   overflow: scroll;
   overflow-x: hidden;
+  opacity: 90%;
 }
 
 *::-webkit-scrollbar {
@@ -270,19 +269,28 @@ li {
     font-size: 10px;
 }
 
+@keyframes animated {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
 .announcement {
     font-family: pokemon;
     text-align: right;
     display: inline-block;
+    position: absolute;
+    left: 0px;
     font-family: 'pokemon';
     text-align: bottom;
     -webkit-text-stroke: 0px #43e486;
     white-space: normal;
-    min-width: 100%;
-    height: 100%;
+    width: 100%;
+    height: 20%;
     line-height: 140px;
     font-size: 25px;
-    animation: marquee 6s linear infinite;
 }
-
 
