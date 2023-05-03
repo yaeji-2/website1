@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>yaeji's world</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="styleskr.css">
+	    <link rel="icon" type="image/x-icon" href="BC3F1F58-82A2-4371-84BC-67B23F2C9644.png">
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Dec 3, 2023 00:00:00").getTime();
+      
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+      
+              // Get the current date and time
+              var now = new Date().getTime();
+      
+              // Find the distance between now and the countdown date
+              var distance = countDownDate - now;
+      
+              // Calculate days, hours, minutes, and seconds remaining
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+              // Display the countdown in the HTML element with id="countdown"
+              document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+      
+              // If the countdown is over, display a message
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+          </script>
+    </head>
+    <body>
+        
+        <div class="bigdiv">
+            <div class="welcome">
+                <div class="scroll">
+                    <span><img src="images/!!.gif"> 야에지 세상 온 걸 환영합니다 <img src="images/!!.gif"></span>
+                </div>
+            </div>
+            <a href="https://open.spotify.com/playlist/2mo5u6VbhMAF8C61L6FLKa?si=bfd8d549ea83418e"><div class="minibanner"><img src="images/smile.gif">&nbsp재생목록</div></a>
+            <div class="minibanner1"><img src="images/question_marks.gif"> &nbsp곧 온다</div>
+        </div>
+
+        <div class="about">
+
+            <div class="button1">
+                <h2 class="banner"><img src="images/star3-1.gif"> 이건 꼭 들어봐야 해:</h2>
+                <iframe class="iframe" style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/track/1KCXYoPIpvafzaAGtiRjci?utm_source=generator&theme=0" 
+                    width="96%" 
+                    height="129" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="button2">
+                <h1 class="camera" style="margin-top: 21px"><img src="images/camera.png">  사진기 장비는:</h1>
+                <ul>
+                    <li>canon eos rp</li>
+                    <li>rf 70-200 f/4 L</li>
+                    <li>rf 50 f/1.8</li>
+                    <br>
+                    <li>sony a7 iv*</li>
+                    <li>16-35 f/2.8*</li>
+                </ul>
+            </div>
+            <div class="button3">
+                <h1 class="camera" style="margin-top:21px"><img src="images/gear.gif">  이것은 제 컴퓨터: </h1>
+                <ul>
+                    <li>r9 5900x</li>
+                    <li>3080 ftw3 ultra</li>
+                    <li>32gb 2x16 3600 &nbspcl14</li>
+                    <li>kraken x63</li>
+                    <li>strix b550f</li>
+                </ul>
+            </div>
+            <div class="button4">
+                <h1 class="camera" style="margin-top:21px"><img src="images/rv.jpg">  제 케이팝 앨범 컬렉션이에요:</h1>
+                <ul>
+                    <li>Ice Cream Cake (automatic ver.)</li>
+                    <li>The Red</li>
+                    <li>The Velvet</li>
+                    <li>Russian Roulette (g)</li>
+                    <li>Rookie (아이린 ver.)</li>
+                    <li>Red Summer (g)</li>
+                    <li>Perfect Velvet (g)</li>
+                    <li>The Perfect Red Velvet (g)</li>
+                    <li>#Cookie Jar (jewel)</li>
+                    <li>Summer Magic (g)</li>
+                    <li>RBB</li>
+                    <li>ReVe Festival Day 1 (g | 조이, 웬디 ver.)</li>
+                    <li>ReVe Festival Day 2 (day 2 ver.)</li>
+                    <li>ReVe Festival Finale (all ver)</li>
+                    <li>Queendom (all ver.)</li>
+                    <li>Feel My Rhythm (all ver.)</li>
+                    <li>WILDSIDE (jewel)</li>
+                    <li>ReVe Festival: Birthday (Recipe photobook | Cakes: 아이린, 슬기, 웬디, 조이 | Digipacks: 웬디, 슬기, 조이)</li>
+                    <br>
+                </ul>
+                <h1 class="camera">OTHERS:</h1>
+                <ul>
+                    <li>Like Water (photobook, case)</li>
+                    <li>Hello (photobook, case)</li>
+                    <li>28 Reasons (photobook, special)</li>
+                    <li>Monster (base note)</li>
+                </ul>
+            </div>
+            <div class="button5">
+                <h1 class="camera" style="margin-top:21px; font-size: 20px"><img src="images/hearts.gif">&nbsp하나 <h2 style="font-size: 7px; margin-left: 20px; margin-top: 0px;">(2021.12.3)</h2></h1>
+                <p style="margin-left: 20px">기념일: 
+                    <br>2023년 12월 3일.</p><p class="countdown" id="countdown"></p>
+            </div>
+            <div class="button6"></div>
+            <div class="button7"></div>
+            <div class="button8"></div>
+            <div class="button9"></div>
+        </div>     
+		<footer>
+            <a href="index.html"><button class="lang"></button></a>
+        </footer>
+        <footer>
+            <div class="announcement">
+                <marquee direction="scroll" scrollamount="15"><img src="images/star3-1.gif"> &nbsp대개장!!! <img src="images/star3-1.gif">
+            </div>
+        </footer>
+    </body>
+</html>
