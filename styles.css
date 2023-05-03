@@ -71,12 +71,14 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 60%; /* set the width of the parent div */
+  max-width: 60%; /* set the width of the parent div */
   height: 600px; /* set the height of the parent div */
   overflow: hidden;
   overflow: scroll;
   overflow-x: hidden;
   opacity: 90%;
+  max-width: 700px;
+  min-width: 430px;
 }
 
 *::-webkit-scrollbar {
@@ -126,7 +128,8 @@ body {
     background-color: #c2ff191e;
     border: 1px solid black;
     border-radius: 6px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 14px;
     border-color: green;
 }
 
@@ -136,7 +139,8 @@ body {
     background-color: #c919ff1e;
     border: 1px solid black;
     border-radius: 6px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 14px;
     border-color: green;
 }
 
@@ -146,7 +150,8 @@ body {
     background-color: #0ebbf034;
     border: 1px solid black;
     border-radius: 6px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 14px;
     border-color: green;
     overflow: hidden;
     overflow: scroll;
@@ -159,10 +164,18 @@ body {
     background-color: #43f00e34;
     border: 1px solid black;
     border-radius: 6px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 14px;
     border-color: green;
     font-family: pokemon;
+    overflow: hidden;
+    overflow-x: hidden;
 }
+
+.button5:hover {
+    overflow-y: scroll;
+}
+
 
 .button6 {
     width: 45%;
@@ -170,7 +183,8 @@ body {
     background-color: #aa1c4c1e;
     border: 1px solid black;
     border-radius: 6px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 14px;
     border-color: green;
     font-family: pokemon;
     text-align: center;
@@ -183,7 +197,8 @@ body {
     background-color: #aa1c4c1e;
     border: 1px solid black;
     border-radius: 6px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 14px;
     border-color: green;
 }
 
@@ -193,7 +208,8 @@ body {
     background-color: #aa1c4c1e;
     border: 1px solid black;
     border-radius: 6px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 14px;
     border-color: green;
 }
 
@@ -203,7 +219,8 @@ body {
     background-color: #aa1c4c1e;
     border: 1px solid black;
     border-radius: 6px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 14px;
     border-color: green;
 }
 
