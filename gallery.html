@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Grid with Lightbox</title>
+  <title>yaeji's world</title>
   <style>
     body {
       margin: 0;
@@ -57,6 +57,7 @@
     }
     /* Styling for the enlarged image container */
     #enlarged-image-container {
+      display: none;
       position: fixed;
       top: 0;
       left: 0;
@@ -76,13 +77,24 @@
       max-height: 80%;
       opacity: 0;
       transition: opacity 0.3s;
+      display: block; /* Ensure the image is displayed */
     }
     #enlarged-image-container.active {
+      display: flex;
       opacity: 1;
       pointer-events: auto;
     }
     #enlarged-image.active {
       opacity: 1;
+    }
+    .enlarged-close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      background-color: #fff;
+      color: #000;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -147,23 +159,18 @@
           <div class="image-overlay">
             <div class="close-button">Close</div>
           </div>
-        </div>
-        <div class="image-item">
-          <img src="images/phonto (11).jpg" alt="Image 1">
-          <div class="image-overlay">
-            <div class="close-button">Close</div>
-          </div>
-    <!-- Add more image items here as needed -->
   </div>
   
   <div id="enlarged-image-container">
     <img id="enlarged-image" src="" alt="Enlarged Image">
+    <div class="enlarged-close-button">Close</div>
   </div>
 
   <script>
     const imageItems = document.querySelectorAll('.image-item');
     const enlargedImageContainer = document.getElementById('enlarged-image-container');
     const enlargedImage = document.getElementById('enlarged-image');
+    const enlargedCloseButton = document.querySelector('.enlarged-close-button');
 
     function openImageOverlay() {
       const imageUrl = this.querySelector('img').src;
@@ -172,17 +179,16 @@
       document.body.style.overflow = 'hidden';
     }
 
-    function closeImageOverlay(event) {
-      if (event.target.classList.contains('close-button')) {
-        enlargedImageContainer.classList.remove('active');
-        document.body.style.overflow = 'auto';
-      }
+    function closeImageOverlay() {
+      enlargedImageContainer.classList.remove('active');
+      document.body.style.overflow = 'auto';
     }
 
     imageItems.forEach((item) => {
       item.addEventListener('click', openImageOverlay);
-      item.addEventListener('click', closeImageOverlay);
     });
+
+    enlargedCloseButton.addEventListener('click', closeImageOverlay);
   </script>
 </body>
 </html>
