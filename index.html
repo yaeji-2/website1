@@ -7,29 +7,29 @@
 	    <link rel="stylesheet" href="styles.css">
 	    <link rel="icon" type="image/x-icon" href="BC3F1F58-82A2-4371-84BC-67B23F2C9644.png">
         <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date("Dec 3, 2023 00:00:00").getTime();
+            // set the date counting down to
+            var countDownDate = new Date("Dec 3, 2024 00:00:00").getTime();
       
-            // Update the count down every 1 second
+            // update count down every 1 second
             var x = setInterval(function() {
       
-              // Get the current date and time
+              // get current date and time
               var now = new Date().getTime();
       
-              // Find the distance between now and the countdown date
+              // find distance between now and the countdown date
               var distance = countDownDate - now;
       
-              // Calculate days, hours, minutes, and seconds remaining
+              // calculate days, hours, minutes, and seconds remaining
               var days = Math.floor(distance / (1000 * 60 * 60 * 24));
               var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
               var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
               var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
-              // Display the countdown in the HTML element with id="countdown"
+              // display countdown in the HTML element id="countdown"
               document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
               + minutes + "m " + seconds + "s ";
       
-              // If the countdown is over, display a message
+              // if the countdown is over, display expired message
               if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("countdown").innerHTML = "EXPIRED";
@@ -119,7 +119,7 @@
             <div class="button5">
                 <h1 class="camera" style="margin-top:21px; font-size: 20px"><img src="images/hearts.gif">&nbsp하나 <h2 style="font-size: 7px; margin-left: 20px; margin-top: 0px;">(2021.12.3)</h2></h1>
                 <p style="margin-left: 20px">기념일: 
-                    <br>2023년 12월 3일.</p><p class="countdown" id="countdown"></p>
+                    <br>2024년 12월 3일.</p><p class="countdown" id="countdown"></p>
             </div>
             <div class="button6"></div>
             <div class="button7"></div>
