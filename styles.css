@@ -309,6 +309,7 @@ li {
         margin-right: 0px;
         grid-template-columns: repeat(2, 1fr);
         min-width: 412px;
+        margin-left: 0px;
     }
 
     .bigdiv {
@@ -325,6 +326,7 @@ li {
         margin-right: 0px;
         grid-template-columns: repeat(2, 1fr);
         min-width: 412px;
+        margin-left: 0px;
     }
 
     .bigdiv {
