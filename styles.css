@@ -79,7 +79,6 @@ body {
   overflow-x: hidden;
   opacity: 90%;
   max-width: 700px;
-  min-width: 453px;
 }
 
 *::-webkit-scrollbar {
@@ -309,6 +308,7 @@ li {
 
     .about {
         scroll-margin-left: 0px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .bigdiv {
@@ -327,13 +327,11 @@ li {
 
     .about {
         margin: 0px;
+        grid-template-columns: repeat(2, 1fr);
+        width: (100% - 20px);
     }
 
     .bigdiv {
         display: none;
-    }
-
-    .button2, .button3, .button4, .button5 {
-        font-size: 12px
     }
 }
