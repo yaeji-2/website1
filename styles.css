@@ -303,21 +303,29 @@ li {
 }
   
 @media (max-width: 768px) {
-    .minibanner, .minibanner1, .welcome {
+    .minibanner, .minibanner1, .welcome, .lang {
         display: none;
     }
 
     .about {
-        margin: 0px;
+        scroll-margin-left: 0px;
+    }
+
+    .bigdiv {
+        display: none;
     }
 }
 
 @media (max-width: 480px) {
-    .minibanner, .minibanner1, .welcome {
+    .minibanner, .minibanner1, .welcome, .lang {
         display: none;
     }
 
     .about {
         margin: 0px;
+    }
+
+    .bigdiv {
+        display: none;
     }
 }
