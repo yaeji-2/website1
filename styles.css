@@ -5,9 +5,8 @@
 
 body {
   display: flex;
-  overflow-y: hidden;
   background-image: url(images/backgroundwoofa.jpg);
-  background-size:cover;
+  background-size: cover;
 }
 
 .welcome {
@@ -314,10 +313,6 @@ li {
 
     .bigdiv {
         display: none;
-    }
-
-    .button2, .button3, .button4, .button5 {
-        font-size: 12px
     }
 }
 
