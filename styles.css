@@ -307,8 +307,9 @@ li {
     }
 
     .about {
-        scroll-margin-left: 0px;
+        margin-right: 0px;
         grid-template-columns: repeat(2, 1fr);
+        width: 400px;
     }
 
     .bigdiv {
@@ -326,9 +327,9 @@ li {
     }
 
     .about {
-        margin: 0px;
+        margin-right: 0px;
         grid-template-columns: repeat(2, 1fr);
-        width: (100% - 20px);
+        width: 400px;
     }
 
     .bigdiv {
