@@ -11,14 +11,13 @@ body {
 }
 
 #image-grid {
-  width: 600px; /* Ensure the width is set */
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns */
   gap: 10px;
   padding: 20px;
   margin: 0 auto; /* Centers the grid horizontally */
   background-color: #ffffff;
-  max-width: 1080px;
+  max-width: 600px;
 }
 
 .image-item {
