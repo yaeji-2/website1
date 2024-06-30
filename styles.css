@@ -6,7 +6,8 @@
 body {
   display: flex;
   overflow-y: hidden;
-  background-image: url(images/backgroundwoofa.jpg)
+  background-image: url(images/backgroundwoofa.jpg);
+  background-size:cover;
 }
 
 .welcome {
@@ -65,12 +66,12 @@ body {
   margin-top: 152px;
   margin-left: 30px;
   outline: solid;
-  outline-width: 2px;
+  outline-width: 1px;
   outline-color: #e9afba;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content:baseline;
   width: 60%; /* set the width of the parent div */
   height: 600px; /* set the height of the parent div */
   overflow: hidden;
@@ -78,7 +79,7 @@ body {
   overflow-x: hidden;
   opacity: 90%;
   max-width: 700px;
-  min-width: 450px;
+  min-width: 453px;
 }
 
 *::-webkit-scrollbar {
@@ -112,43 +113,41 @@ body {
     background: rgb(0,211,255);
     background: rgb(0,211,255);
     background: rgb(0,211,255);
-    border: solid;
-    border-top-width: 0px;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-color: pink;
     text-decoration: solid;
     color: white;
     background: linear-gradient(-45deg, rgba(0,211,255,0.28895308123249297) 0%, rgba(9,9,121,0.3085609243697479) 55%);
 }
 
 .button2 {
-    width: 45%; /* set the width of each child div */
-    height: 200px; /* set the height of each child div */
+    width: 47%;
+    height: 200px;
     background-color: #c2ff191e;
     border: 1px solid black;
     border-radius: 6px;
     margin: 10px;
+    margin-bottom: 0px;
     border-color: green;
+    justify-content: center;
 }
 
 .button3 {
-    width: 45%;
+    width: 47%;
     height: 200px;
     background-color: #c919ff1e;
     border: 1px solid black;
     border-radius: 6px;
-    margin: 10px;
     border-color: green;
+    margin-top: 10px;
 }
 
 .button4 {
-    width: 45%;
+    width: 47%;
     height: 200px;
     background-color: #0ebbf034;
     border: 1px solid black;
     border-radius: 6px;
     margin: 10px;
+    margin-bottom: 0px;
     border-color: green;
     overflow: hidden;
     overflow: scroll;
@@ -156,15 +155,15 @@ body {
 }
 
 .button5 {
-    width: 45%;
+    width: 47%;
     height: 200px;
     background-color: #43f00e34;
     border: 1px solid black;
     border-radius: 6px;
-    margin: 10px;
     border-color: green;
     font-family: pokemon;
     overflow: hidden;
+    margin-top: 10px;
 }
 
 .button5:hover {
@@ -172,12 +171,13 @@ body {
   }
 
 .button6 {
-    width: 45%;
+    width: 47%;
     height: 200px;
     background-color: #aa1c4c1e;
     border: 1px solid black;
     border-radius: 6px;
     margin: 10px;
+    margin-bottom: 0px;
     border-color: green;
     font-family: pokemon;
     text-align: center;
@@ -185,17 +185,17 @@ body {
 }
 
 .button7 {
-    width: 45%;
+    width: 47%;
     height: 200px;
     background-color: #aa1c4c1e;
     border: 1px solid black;
     border-radius: 6px;
-    margin: 10px;
     border-color: green;
+    margin-top: 10px;
 }
 
 .button8 {
-    width: 45%;
+    width: 47%;
     height: 200px;
     background-color: #aa1c4c1e;
     border: 1px solid black;
@@ -205,12 +205,11 @@ body {
 }
 
 .button9 {
-    width: 45%;
+    width: 47%;
     height: 200px;
     background-color: #aa1c4c1e;
     border: 1px solid black;
     border-radius: 6px;
-    margin: 10px;
     border-color: green;
 }
 
@@ -301,4 +300,16 @@ li {
     min-height: 40px;
     border:white;
     background-color:white;
+}
+  
+@media (max-width: 768px) {
+    .minibanner, .minibanner1, .welcome {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .minibanner, .minibanner1, .welcome {
+        display: none;
+    }
 }
