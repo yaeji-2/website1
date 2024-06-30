@@ -24,14 +24,14 @@ body {
   position: relative;
   cursor: pointer;
   transition: opacity 0.3s;
-  height: 300px; /* Set a fixed height for the containers */
-  overflow: hidden; /* Hide any overflow from the images */
+  height: 300px;
+  overflow: hidden;
 }
 
 .image-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Make the images fill their containers proportionally */
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
 
 .image-overlay {
