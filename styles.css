@@ -306,10 +306,18 @@ li {
     .minibanner, .minibanner1, .welcome {
         display: none;
     }
+
+    .about {
+        margin: 0px;
+    }
 }
 
 @media (max-width: 480px) {
     .minibanner, .minibanner1, .welcome {
         display: none;
+    }
+
+    .about {
+        margin: 0px;
     }
 }
