@@ -235,17 +235,25 @@ body {
     text-decoration: underline;
 }
 
+.minibanner:hover {
+    background-color: rgb(255, 152, 152);
+}
+
 .minibanner1 {
     margin-left: 30px;
     margin-top: 10px;
     height: 35px;
-    background-color: rgba(251, 255, 0, 0.801);
+    background-color: rgba(253, 255, 151, 0.801);
     text-align: center;
     line-height: 35px;
     color: rgb(0, 0, 0);
     font-family: pokemon;
     font-size: 10px;
     text-decoration: underline;
+}
+
+.minibanner1:hover {
+    background-color: rgba(251, 255, 0, 0.801);
 }
 
 a.button {
@@ -299,6 +307,92 @@ li {
     border:white;
     background-color:white;
 }
+
+.floating-button {
+    position: fixed;
+    top: 10px;
+    left: 30px;
+    z-index: 1000;
+}
+
+.floating-button img {
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.menu-box {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 30px;
+    width: 200px;
+    padding: 20px;
+    background-color: rgba(173, 216, 230, 0.9);
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-content {
+    margin-top: 30px;
+}
+
+.menu-item {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    font-family: pokemon;
+    text-decoration: underline;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+.option1 {
+    background-color: #ffcccc; /* Light red */
+    color: #333;
+}
+
+.option1:hover {
+    background-color: #ff9999;
+}
+
+.option2 {
+    background-color: rgba(253, 255, 115, 0.801); /* Light green */
+    color: #333;
+}
+
+.option2:hover {
+    background-color: rgba(251, 255, 0, 0.801);
+}
+
+.option3 {
+    background-color: #ccccff; /* Light purple */
+    color: #333;
+}
+
+.option3:hover {
+    background-color: #9999ff;
+}
   
 @media (max-width: 768px) {
     .minibanner, .minibanner1, .welcome, .lang {
@@ -314,6 +408,10 @@ li {
 
     .bigdiv {
         display: none;
+    }
+
+    .announcement {
+        margin-top: 30px;
     }
 }
 
@@ -331,5 +429,9 @@ li {
 
     .bigdiv {
         display: none;
+    }
+
+    .announcement {
+        margin-top: 30px;
     }
 }
