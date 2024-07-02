@@ -93,8 +93,6 @@ body {
     border: 3px solid #9dff00;
   }
 
-
-
 .button {
     width: 45%; /* set the width of each child div */
     height: 200px; /* set the height of each child div */
@@ -313,6 +311,7 @@ li {
     top: 10px;
     left: 30px;
     z-index: 1000;
+    display: none;
 }
 
 .floating-button img {
@@ -413,6 +412,10 @@ li {
     .announcement {
         margin-top: 30px;
     }
+
+    .floating-button {
+        display: block;
+    }
 }
 
 @media (max-width: 480px) {
@@ -433,5 +436,9 @@ li {
 
     .announcement {
         margin-top: 30px;
+    }
+
+    .floating-button {
+        display: block;
     }
 }
