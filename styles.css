@@ -392,6 +392,19 @@ li {
 .option3:hover {
     background-color: #9999ff;
 }
+
+.top-right-image {
+    position: fixed;
+    top: 16px;
+    right: 14px;
+    z-index: 1000;
+    display: none;
+}
+
+.top-right-image img {
+    width: 150px;
+    height: 50px;
+}
   
 @media (max-width: 768px) {
     .minibanner, .minibanner1, .welcome, .lang {
@@ -414,6 +427,10 @@ li {
     }
 
     .floating-button {
+        display: block;
+    }
+
+    .top-right-image {
         display: block;
     }
 }
@@ -439,6 +456,10 @@ li {
     }
 
     .floating-button {
+        display: block;
+    }
+
+    .top-right-image {
         display: block;
     }
 }
